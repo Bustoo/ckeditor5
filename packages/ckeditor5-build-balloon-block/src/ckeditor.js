@@ -66,7 +66,8 @@ BalloonEditor.builtinPlugins = [
 // Editor configuration.
 BalloonEditor.defaultConfig = {
 	blockToolbar: [
-		'imageUpload'
+		'imageUpload',
+		'blockQuote',
 	],
 	toolbar: {
 		items: [
