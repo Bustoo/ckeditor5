@@ -30,6 +30,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import Title from '@ckeditor/ckeditor5-heading/src/title.js';
@@ -67,7 +68,8 @@ BalloonEditor.builtinPlugins = [
 	TextTransformation,
 	Underline,
 	Strikethrough,
-	Title
+	Title,
+	SimpleUploadAdapter
 ];
 
 // Editor configuration.
