@@ -31,6 +31,10 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
+import Title from '@ckeditor/ckeditor5-heading/src/title.js';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+
 import '../theme/theme.css';
 
 export default class BalloonEditor extends BalloonEditorBase {}
@@ -60,7 +64,10 @@ BalloonEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	Underline,
+	Strikethrough,
+	Title
 ];
 
 // Editor configuration.
@@ -73,6 +80,7 @@ BalloonEditor.defaultConfig = {
 		items: [
 			'bold',
 			'italic',
+			'underline',
 			'link'
 		]
 	},
