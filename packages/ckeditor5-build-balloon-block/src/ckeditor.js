@@ -66,21 +66,7 @@ BalloonEditor.builtinPlugins = [
 // Editor configuration.
 BalloonEditor.defaultConfig = {
 	blockToolbar: [
-		'heading',
-		'|',
-		'bulletedList',
-		'numberedList',
-		'|',
-		'indent',
-		'outdent',
-		'|',
-		'imageUpload',
-		'blockQuote',
-		'insertTable',
-		'mediaEmbed',
-		'|',
-		'undo',
-		'redo'
+		'imageUpload'
 	],
 	toolbar: {
 		items: [
