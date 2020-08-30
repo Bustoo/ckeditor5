@@ -30,6 +30,12 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
+import Title from '@ckeditor/ckeditor5-heading/src/title.js';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+
+
 export default class BalloonEditor extends BalloonEditorBase {}
 
 // Plugins to include in the build.
@@ -48,15 +54,19 @@ BalloonEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
+	MediaEmbed,
 	Indent,
 	Link,
 	List,
-	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	Underline,
+	Strikethrough,
+	Title,
+	SimpleUploadAdapter
 ];
 
 // Editor configuration.
@@ -67,7 +77,9 @@ BalloonEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'underline',
 			'link',
+			'strikethrough',
 			'bulletedList',
 			'numberedList',
 			'|',
@@ -77,7 +89,6 @@ BalloonEditor.defaultConfig = {
 			'imageUpload',
 			'blockQuote',
 			'insertTable',
-			'mediaEmbed',
 			'undo',
 			'redo'
 		]
