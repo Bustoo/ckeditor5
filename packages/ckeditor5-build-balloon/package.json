@@ -70,5 +70,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "preversion": "npm run build"
+  },
+  "dependencies": {
+    "ckeditor5-sss-upload": "^1.1.0"
   }
 }
