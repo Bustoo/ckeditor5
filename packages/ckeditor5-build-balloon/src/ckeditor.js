@@ -7,12 +7,12 @@
 import BalloonEditorBase from '@ckeditor/ckeditor5-editor-balloon/src/ballooneditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
+//import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
+//import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 //import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
@@ -35,6 +35,7 @@ import Title from '@ckeditor/ckeditor5-heading/src/title.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 //import S3Uploader from 'ckeditor5-sss-upload/src/s3upload';
 //import SimpleUploadAdapter from "@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter";
+import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 
 
 export default class BalloonEditor extends BalloonEditorBase {}
@@ -64,8 +65,7 @@ BalloonEditor.builtinPlugins = [
 	Underline,
 	Strikethrough,
 	Title,
-	UploadAdapter,
-	CKFinder
+	Base64UploadAdapter
 	//SimpleUploadAdapter
 	//S3Uploader
 ];
