@@ -33,7 +33,6 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import Title from '@ckeditor/ckeditor5-heading/src/title.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
-import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import S3Uploader from 'ckeditor5-sss-upload/src/s3upload';
 
 
@@ -42,13 +41,10 @@ export default class BalloonEditor extends BalloonEditorBase {}
 // Plugins to include in the build.
 BalloonEditor.builtinPlugins = [
 	Essentials,
-	UploadAdapter,
 	Autoformat,
 	Bold,
 	Italic,
 	BlockQuote,
-	CKFinder,
-	EasyImage,
 	Heading,
 	Image,
 	ImageCaption,
