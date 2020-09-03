@@ -67,7 +67,6 @@ BalloonEditor.builtinPlugins = [
 	Underline,
 	Strikethrough,
 	Title,
-	SimpleUploadAdapter,
 	S3Uploader
 ];
 
